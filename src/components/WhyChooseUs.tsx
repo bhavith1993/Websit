@@ -4,27 +4,27 @@ const WhyChooseUs = () => {
   const benefits = [
     {
       icon: Award,
-      title: "Industry Expertise",
+      title: "Expertise, Not Headcount",
       description:
-        "Deep understanding of finance and accounting processes with proven track record in financial analytics.",
+        "You don’t need to hire analysts, BI developers, or automation engineers. Our team brings senior-level accounting, FP&A, Power BI, and Alteryx expertise—without the long-term cost.",
     },
     {
       icon: Clock,
-      title: "Fast Delivery",
+      title: "Rapid Deployment",
       description:
-        "Efficient project execution with agile methodologies ensuring timely delivery without compromising quality.",
+        "Most projects go live in 2–4 weeks, not months.",
     },
     {
       icon: Shield,
-      title: "Data Security",
+      title: "Built for Finance, Not IT",
       description:
-        "Enterprise-grade security practices and compliance with financial data protection standards.",
+        "We speak the language of CFOs, Controllers, and FP&A. Our solutions reflect real financial logic—not tech jargon.",
     },
     {
       icon: Users,
-      title: "Dedicated Support",
+      title: "Sustainable, Scalable, Reliable",
       description:
-        "Ongoing support and training to ensure your team maximizes value from analytics solutions.",
+        "Every workflow and report is designed to run automatically every period, with minimal maintenance",
     },
   ];
 

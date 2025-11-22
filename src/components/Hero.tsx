@@ -39,12 +39,14 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up">
-            <Button variant="hero" size="lg">
-              Schedule Consultation
-              <ArrowRight className="ml-2" />
+            <Button variant="hero" size="lg" asChild>
+              <a href="#contact">
+                Schedule Consultation
+                <ArrowRight className="ml-2" />
+              </a>
             </Button>
-            <Button variant="outline" size="lg">
-              View Our Work
+            <Button variant="outline" size="lg" asChild>
+              <a href="#services">View Our Work</a>
             </Button>
           </div>
 

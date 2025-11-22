@@ -25,17 +25,23 @@ const ContactCTA = () => {
               variant="secondary"
               size="lg"
               className="bg-white text-primary hover:bg-white/90 shadow-hover"
+              asChild
             >
-              <Calendar className="mr-2" />
-              Schedule Consultation
+              <a href="mailto:contact@datavision.com">
+                <Calendar className="mr-2" />
+                Schedule Consultation
+              </a>
             </Button>
             <Button
               variant="outline"
               size="lg"
               className="border-2 border-white text-white hover:bg-white hover:text-primary"
+              asChild
             >
-              <Mail className="mr-2" />
-              Email Us
+              <a href="mailto:contact@datavision.com">
+                <Mail className="mr-2" />
+                Email Us
+              </a>
             </Button>
           </div>
 
@@ -46,7 +52,7 @@ const ContactCTA = () => {
               </div>
               <div className="text-left">
                 <div className="text-sm text-white/80">Call Us</div>
-                <div className="font-semibold">+1 (555) 123-4567</div>
+                <div className="font-semibold">+1 (306) 891-5367</div>
               </div>
             </div>
 
