@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { 
@@ -78,6 +78,9 @@ const PowerBIDemo = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [showCursor, setShowCursor] = useState(true);
   const [clicking, setClicking] = useState(false);
+  
+  const containerRef = useRef<HTMLDivElement>(null);
+  const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   useEffect(() => {
     if (!isPlaying) return;
@@ -86,13 +89,22 @@ const PowerBIDemo = () => {
       // Animate cursor movement before tab change
       const nextTab = (activeTab + 1) % 6;
       
-      // Calculate target position for next tab button
-      const tabButtonX = 200 + (nextTab * 120); // Approximate position
-      const tabButtonY = 45; // Top bar position
+      // Get actual button position
+      const targetButton = tabRefs.current[nextTab];
+      const container = containerRef.current;
       
-      // Animate cursor to button
-      setShowCursor(true);
-      setCursorPosition({ x: tabButtonX, y: tabButtonY });
+      if (targetButton && container) {
+        const buttonRect = targetButton.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+        
+        // Calculate position relative to container
+        const tabButtonX = buttonRect.left - containerRect.left + buttonRect.width / 2;
+        const tabButtonY = buttonRect.top - containerRect.top + buttonRect.height / 2;
+        
+        // Animate cursor to button
+        setShowCursor(true);
+        setCursorPosition({ x: tabButtonX, y: tabButtonY });
+      }
       
       // Show click animation
       setTimeout(() => {
@@ -127,7 +139,7 @@ const PowerBIDemo = () => {
           </p>
         </div>
 
-        <div className="max-w-7xl mx-auto relative">
+        <div className="max-w-7xl mx-auto relative" ref={containerRef}>
           {/* Animated Cursor */}
           {showCursor && isPlaying && (
             <>
@@ -182,6 +194,7 @@ const PowerBIDemo = () => {
                   {tabs.map((tab, idx) => (
                     <button
                       key={idx}
+                      ref={(el) => (tabRefs.current[idx] = el)}
                       onClick={() => {
                         setActiveTab(idx);
                         setIsPlaying(false);
