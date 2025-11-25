@@ -2,15 +2,14 @@ import { Card } from "@/components/ui/card";
 import powerbiIcon from "@/assets/powerbi-icon.jpg";
 import alteryxIcon from "@/assets/alteryx-icon.jpg";
 import financeIcon from "@/assets/finance-icon.jpg";
-import powerbialteryxIcon from "@/assets/powerbi_alteryx-icon.jpg";
 import { ArrowRight } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      title: "Power BI Automation for Accounting",
+      title: "Power BI Solutions",
       description:
-        "ERPs are great for transactions, not for fast, flexible reporting. Power BI fixes that. We automate data prep, formatting, and recurring financial reports so work that used to take days runs in minutes. Our refresh-ready data models kill spreadsheet bottlenecks and give accounting instant visibility into what’s driving performance.",
+        "Custom dashboards, data modeling, and report automation tailored for financial analysis and reporting.",
       icon: powerbiIcon,
       features: [
         "Custom Dashboard Design",
@@ -20,21 +19,9 @@ const Services = () => {
       ],
     },
     {
-      title: "Power BI Automation for FP&A",
+      title: "Alteryx Consulting",
       description:
-        "Stop rebuilding spreadsheets.Power BI gives FP&A real-time visibility into results, drivers, and scenarios.We automate your data flows, driver-based models, and performance dashboards so forecasts and variance reports refresh in minutes, not days",
-      icon: powerbiIcon,
-      features: [
-        "Custom Dashboard Design",
-        "Data Integration & ETL",
-        "Advanced DAX Calculations",
-        "Report Automation",
-      ],
-    },
-    {
-      title: "Alteryx Automation for Accounting",
-      description:
-        "Alteryx transforms complex, manual accounting workflows into fast, repeatable processes. Tasks such as data prep, transformations, allocations, or multi-step logic that once took hours—or even days—now run in minutes.Our experts design automated workflows tailored to your ERP structure, chart of accounts, and reporting cadence, ensuring accuracy, speed, and consistency across every cycle.With our support, you avoid building an in-house automation team; we build the workflows, test them, deploy them, and leave you with a fully automated engine.",
+        "Streamline your data preparation and analytics workflows with powerful automation solutions.",
       icon: alteryxIcon,
       features: [
         "Workflow Automation",
@@ -44,29 +31,15 @@ const Services = () => {
       ],
     },
     {
-      title: "Power BI + Alteryx Automation",
+      title: "Finance Analytics",
       description:
-        "Alteryx automates the workflows. Power BI delivers the insight. We wire them together so finance gets fast, trusted numbers—every close, every forecast.",
-      icon: powerbialteryxIcon,
-      features: [
-        "Clean, automated data flows",
-        "Faster reporting",
-        "Instant drill-downs",
-        "Better decisions",
-        "Fewer bottlenecks",
-      ],
-    },
-    {
-      title: "FP&A Automation & Predictive Reporting",
-      description:
-        "FP&A teams thrive when actuals, drivers, and forecasts are updated without manual effort.Your team gets real-time visibility, updated insights, and faster planning cycles—without hiring modelers, BI specialists, or data engineers.We automate:",
+        "Specialized financial modeling, forecasting, and reporting solutions for modern finance teams.",
       icon: financeIcon,
       features: [
-        "Actuals refresh",
-        "Driver-based models",
-        "Rolling forecasts",
-        "Executive dashboards",
-        "Scenario toggles",
+        "Financial Modeling",
+        "Budget & Forecast Analysis",
+        "KPI Dashboards",
+        "Variance Analysis",
       ],
     },
   ];

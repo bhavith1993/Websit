@@ -6,7 +6,7 @@ const WhyChooseUs = () => {
       icon: Award,
       title: "Expertise, Not Headcount",
       description:
-        "You don’t need to hire analysts, BI developers, or automation engineers. Our team brings senior-level accounting, FP&A, Power BI, and Alteryx expertise—without the long-term cost.",
+        "You don't need to hire analysts, BI developers, or automation engineers. Our team brings senior-level accounting, FP&A, Power BI, and Alteryx expertise—without the long-term cost.",
     },
     {
       icon: Clock,
@@ -15,16 +15,16 @@ const WhyChooseUs = () => {
         "Most projects go live in 2–4 weeks, not months.",
     },
     {
-      icon: Shield,
+      icon: Users,
       title: "Built for Finance, Not IT",
       description:
         "We speak the language of CFOs, Controllers, and FP&A. Our solutions reflect real financial logic—not tech jargon.",
     },
     {
-      icon: Users,
+      icon: Shield,
       title: "Sustainable, Scalable, Reliable",
       description:
-        "Every workflow and report is designed to run automatically every period, with minimal maintenance",
+        "Every workflow and report is designed to run automatically every period, with minimal maintenance.",
     },
   ];
 
@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Why <span className="bg-gradient-hero bg-clip-text text-transparent">Choose Us</span>
+            Why Clients <span className="bg-gradient-hero bg-clip-text text-transparent">Choose Us</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             We combine technical excellence with deep financial domain knowledge

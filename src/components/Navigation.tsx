@@ -10,7 +10,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-            Clarity-Flow Finance
+            DataVision Analytics
           </div>
 
           {/* Desktop Navigation */}

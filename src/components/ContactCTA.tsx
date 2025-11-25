@@ -52,7 +52,7 @@ const ContactCTA = () => {
               </div>
               <div className="text-left">
                 <div className="text-sm text-white/80">Call Us</div>
-                <div className="font-semibold">+1 (306) 891-5367</div>
+                <div className="font-semibold">+1 (555) 123-4567</div>
               </div>
             </div>
 
