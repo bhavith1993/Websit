@@ -75,16 +75,39 @@ const PowerBIDemo = () => {
   const [showVideo, setShowVideo] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [showCursor, setShowCursor] = useState(true);
+  const [clicking, setClicking] = useState(false);
 
   useEffect(() => {
     if (!isPlaying) return;
     
     const interval = setInterval(() => {
-      setActiveTab((prev) => (prev + 1) % 6);
+      // Animate cursor movement before tab change
+      const nextTab = (activeTab + 1) % 6;
+      
+      // Calculate target position for next tab button
+      const tabButtonX = 200 + (nextTab * 120); // Approximate position
+      const tabButtonY = 45; // Top bar position
+      
+      // Animate cursor to button
+      setShowCursor(true);
+      setCursorPosition({ x: tabButtonX, y: tabButtonY });
+      
+      // Show click animation
+      setTimeout(() => {
+        setClicking(true);
+        setTimeout(() => setClicking(false), 300);
+      }, 800);
+      
+      // Change tab after cursor animation
+      setTimeout(() => {
+        setActiveTab(nextTab);
+      }, 1200);
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [isPlaying]);
+  }, [isPlaying, activeTab]);
 
   const tabs = ["Overview", "Cash Flow", "Revenue", "Budget", "A/R Aging", "P&L"];
 
@@ -104,9 +127,47 @@ const PowerBIDemo = () => {
           </p>
         </div>
 
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto relative">
+          {/* Animated Cursor */}
+          {showCursor && isPlaying && (
+            <>
+              <div 
+                className="absolute pointer-events-none z-50 transition-all duration-700 ease-out"
+                style={{ 
+                  left: `${cursorPosition.x}px`, 
+                  top: `${cursorPosition.y}px`,
+                  transform: 'translate(-50%, -50%)'
+                }}
+              >
+                {/* Cursor pointer */}
+                <svg 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 24 24" 
+                  fill="none"
+                  className="drop-shadow-lg"
+                >
+                  <path 
+                    d="M5 3L19 12L12 13L9 20L5 3Z" 
+                    fill="white" 
+                    stroke="black" 
+                    strokeWidth="1"
+                  />
+                </svg>
+                
+                {/* Click ripple effect */}
+                {clicking && (
+                  <>
+                    <div className="absolute inset-0 -m-2 rounded-full bg-blue-400/40 animate-ping" />
+                    <div className="absolute inset-0 -m-1 rounded-full bg-blue-500/30 animate-pulse" />
+                  </>
+                )}
+              </div>
+            </>
+          )}
+
           {/* Power BI Style Dashboard */}
-          <Card className="bg-gradient-to-br from-slate-900 to-slate-800 border-slate-700 overflow-hidden shadow-2xl">
+          <Card className="bg-gradient-to-br from-slate-900 to-slate-800 border-slate-700 overflow-hidden shadow-2xl relative">
             {/* Top Bar - Power BI Style */}
             <div className="bg-slate-950 border-b border-slate-700 p-3 flex items-center justify-between">
               <div className="flex items-center gap-4">
