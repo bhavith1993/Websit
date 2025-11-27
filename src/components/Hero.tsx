@@ -38,13 +38,13 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up">
-            <Button variant="hero" size="lg" asChild>
+            <Button variant="default" size="lg" className="bg-gradient-hero hover:opacity-90 transition-opacity" asChild>
               <a href="#contact">
                 Schedule Consultation
                 <ArrowRight className="ml-2" />
               </a>
             </Button>
-            <Button variant="outline" size="lg" asChild>
+            <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10" asChild>
               <a href="#services">View Our Work</a>
             </Button>
           </div>

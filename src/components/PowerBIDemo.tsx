@@ -548,7 +548,7 @@ const PowerBIDemo = () => {
           </Card>
 
           <div className="mt-8 text-center">
-            <Button size="lg" asChild>
+            <Button size="lg" className="bg-gradient-hero hover:opacity-90 transition-opacity" asChild>
               <a href="#contact">Request Demo</a>
             </Button>
           </div>

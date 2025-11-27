@@ -88,17 +88,16 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-b from-background to-muted/20">
+    <section id="contact" className="py-24 bg-[image:var(--gradient-hero)] text-primary-foreground">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Ready to Transform Your Financial Analytics?
+              Ready to Reduce Close Time and Transform Your Financial Analytics?
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Let's discuss how we can help you unlock insights from your data and drive better
-              business decisions.
+            <p className="text-xl text-primary-foreground/90 mb-8">
+              Let's discuss how we can help you gain efficiencies and unlock insights from your data to drive better business decisions.
             </p>
           </div>
 
@@ -106,8 +105,8 @@ const ContactForm = () => {
             {/* Contact Information */}
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
-                <p className="text-muted-foreground mb-8">
+                <h3 className="text-2xl font-semibold mb-6 text-primary-foreground">Get in Touch</h3>
+                <p className="text-primary-foreground/80 mb-8">
                   Fill out the form and we'll be in touch as soon as possible. Or reach out
                   directly using the information below.
                 </p>
@@ -115,14 +114,14 @@ const ContactForm = () => {
 
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-5 h-5 text-primary" />
+                  <div className="w-12 h-12 rounded-lg bg-primary-foreground/20 flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-5 h-5 text-primary-foreground" />
                   </div>
                   <div>
-                    <div className="font-semibold mb-1">Call Us</div>
+                    <div className="font-semibold mb-1 text-primary-foreground">Call Us</div>
                     <a
                       href="tel:+15551234567"
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                     >
                       +1 (555) 123-4567
                     </a>
@@ -130,14 +129,14 @@ const ContactForm = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-5 h-5 text-primary" />
+                  <div className="w-12 h-12 rounded-lg bg-primary-foreground/20 flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-5 h-5 text-primary-foreground" />
                   </div>
                   <div>
-                    <div className="font-semibold mb-1">Email Us</div>
+                    <div className="font-semibold mb-1 text-primary-foreground">Email Us</div>
                     <a
                       href="mailto:contact@datavision.com"
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                     >
                       contact@datavision.com
                     </a>
@@ -145,12 +144,12 @@ const ContactForm = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Calendar className="w-5 h-5 text-primary" />
+                  <div className="w-12 h-12 rounded-lg bg-primary-foreground/20 flex items-center justify-center flex-shrink-0">
+                    <Calendar className="w-5 h-5 text-primary-foreground" />
                   </div>
                   <div>
-                    <div className="font-semibold mb-1">Schedule a Meeting</div>
-                    <p className="text-muted-foreground">
+                    <div className="font-semibold mb-1 text-primary-foreground">Schedule a Meeting</div>
+                    <p className="text-primary-foreground/80">
                       Book a consultation to discuss your needs
                     </p>
                   </div>
