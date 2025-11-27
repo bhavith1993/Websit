@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import PowerBIDemo from "@/components/PowerBIDemo";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import ContactCTA from "@/components/ContactCTA";
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -14,7 +14,7 @@ const Index = () => {
       <Services />
       <PowerBIDemo />
       <WhyChooseUs />
-      <ContactCTA />
+      <ContactForm />
       <Footer />
     </div>
   );

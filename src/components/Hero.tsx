@@ -26,16 +26,15 @@ const Hero = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in-up">
-            Transform Your{" "}
+            Cut your monthly and quarterly close time and turn your{" "}
             <span className="bg-gradient-hero bg-clip-text text-transparent">
-              Financial Data
+              financial data
             </span>{" "}
-            Into Insights
+            into business decisions
           </h1>
 
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl animate-fade-in-up">
-            Expert Power BI and Alteryx consulting for finance professionals. We help you
-            unlock the full potential of your data with custom analytics solutions.
+            We are Finance people. We understand your problems. We leverage light automation tools to help accounting and finance teams. Unlock your team's potential to focus on analysis and decision making, not preparation.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up">
@@ -50,28 +49,19 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-16 animate-fade-in">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <BarChart3 className="w-5 h-5 text-primary" />
-                <div className="text-3xl font-bold text-foreground">500+</div>
+          {/* Experience Stats */}
+          <div className="flex flex-col sm:flex-row gap-6 mt-16 animate-fade-in">
+            <div className="flex items-center gap-3">
+              <BarChart3 className="w-5 h-5 text-primary" />
+              <div className="text-base text-muted-foreground">
+                12+ years of Accounting and Finance experience
               </div>
-              <div className="text-sm text-muted-foreground">Projects Delivered</div>
             </div>
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <Database className="w-5 h-5 text-secondary" />
-                <div className="text-3xl font-bold text-foreground">98%</div>
+            <div className="flex items-center gap-3">
+              <Database className="w-5 h-5 text-secondary" />
+              <div className="text-base text-muted-foreground">
+                20+ years of Business Applications experience
               </div>
-              <div className="text-sm text-muted-foreground">Client Satisfaction</div>
-            </div>
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <TrendingUp className="w-5 h-5 text-accent" />
-                <div className="text-3xl font-bold text-foreground">15+</div>
-              </div>
-              <div className="text-sm text-muted-foreground">Years Experience</div>
             </div>
           </div>
         </div>

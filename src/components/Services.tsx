@@ -7,15 +7,15 @@ import { ArrowRight } from "lucide-react";
 const Services = () => {
   const services = [
     {
-      title: "Power BI Solutions",
+      title: "Power BI Analytic Automation",
       description:
         "Custom dashboards, data modeling, and report automation tailored for financial analysis and reporting.",
       icon: powerbiIcon,
       features: [
-        "Custom Dashboard Design",
-        "Data Integration & ETL",
-        "Advanced DAX Calculations",
-        "Report Automation",
+        "Interactive Executive Dashboards",
+        "Budget and Forecast vs. Actuals Analytics",
+        "Operational Performance",
+        "KPI Dashboards",
       ],
     },
     {
@@ -31,15 +31,15 @@ const Services = () => {
       ],
     },
     {
-      title: "Finance Analytics",
+      title: "Finance Automation Readiness Check",
       description:
-        "Specialized financial modeling, forecasting, and reporting solutions for modern finance teams.",
+        "Examine your existing process to determine potential gaps and recommend sustainable solutions to support your organization's growth.",
       icon: financeIcon,
       features: [
-        "Financial Modeling",
-        "Budget & Forecast Analysis",
-        "KPI Dashboards",
-        "Variance Analysis",
+        "Roadmap Development",
+        "Surveying your finance teams",
+        "Process Map Development [Current vs. Future]",
+        "Recommend Sustainable Solution",
       ],
     },
   ];

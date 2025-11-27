@@ -36,7 +36,7 @@ const WhyChooseUs = () => {
             Why Clients <span className="bg-gradient-hero bg-clip-text text-transparent">Choose Us</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            We combine technical excellence with deep financial domain knowledge
+            Our goal is to save you time and money using light automation tools.
           </p>
         </div>
 

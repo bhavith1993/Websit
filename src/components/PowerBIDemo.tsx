@@ -72,7 +72,6 @@ const plData = [
 ];
 
 const PowerBIDemo = () => {
-  const [showVideo, setShowVideo] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -548,34 +547,9 @@ const PowerBIDemo = () => {
             </div>
           </Card>
 
-          {/* Video Demo Option */}
-          <div className="mt-8 text-center">
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={() => setShowVideo(!showVideo)}
-              className="group"
-            >
-              <Play className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-              {showVideo ? "Hide" : "Watch"} Full Demo Video
-            </Button>
-          </div>
-
-          {showVideo && (
-            <Card className="mt-6 p-4 bg-slate-900 border-slate-700 animate-scale-in">
-              <video
-                controls
-                className="w-full rounded-lg"
-                src="/demo-video.mp4"
-              >
-                Your browser does not support the video tag.
-              </video>
-            </Card>
-          )}
-
           <div className="mt-8 text-center">
             <Button size="lg" asChild>
-              <a href="#contact">Request Custom Dashboard Demo</a>
+              <a href="#contact">Request Demo</a>
             </Button>
           </div>
         </div>
