@@ -113,7 +113,8 @@ const ContactForm = () => {
               </div>
 
               <div className="space-y-4">
-                <div className="flex items-start gap-4">
+                {/* Phone - Hidden for now, will be added back later */}
+                {/* <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg bg-primary-foreground/20 flex items-center justify-center flex-shrink-0">
                     <Phone className="w-5 h-5 text-primary-foreground" />
                   </div>
@@ -126,9 +127,10 @@ const ContactForm = () => {
                       +1 (555) 123-4567
                     </a>
                   </div>
-                </div>
+                </div> */}
 
-                <div className="flex items-start gap-4">
+                {/* Email - Hidden for now, will be added back later */}
+                {/* <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg bg-primary-foreground/20 flex items-center justify-center flex-shrink-0">
                     <Mail className="w-5 h-5 text-primary-foreground" />
                   </div>
@@ -141,7 +143,7 @@ const ContactForm = () => {
                       contact@datavision.com
                     </a>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg bg-primary-foreground/20 flex items-center justify-center flex-shrink-0">

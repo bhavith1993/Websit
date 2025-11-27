@@ -10,7 +10,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-            DataVision Analytics
+            Rivanoe Analytics
           </div>
 
           {/* Desktop Navigation */}
@@ -24,7 +24,7 @@ const Navigation = () => {
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">
               Contact
             </a>
-            <Button variant="hero" size="default">
+            <Button variant="default" size="default" className="bg-gradient-hero hover:opacity-90 transition-opacity">
               Get Started
             </Button>
           </div>
@@ -62,7 +62,7 @@ const Navigation = () => {
             >
               Contact
             </a>
-            <Button variant="hero" size="default" className="w-full">
+            <Button variant="default" size="default" className="w-full bg-gradient-hero hover:opacity-90 transition-opacity">
               Get Started
             </Button>
           </div>
