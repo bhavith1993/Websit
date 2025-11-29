@@ -26,15 +26,14 @@ const Hero = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in-up">
-            Cut your monthly and quarterly close time and turn your{" "}
+            Finance Transformation{" "}
             <span className="bg-gradient-hero bg-clip-text text-transparent">
-              financial data
-            </span>{" "}
-            into business decisions
+              without the headcount
+            </span>
           </h1>
 
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl animate-fade-in-up">
-            We are Finance people. We understand your problems. We leverage light automation tools to help accounting and finance teams. Unlock your team's potential to focus on analysis and decision making, not preparation.
+            We transform finance processes to be efficient. We leverage light automation tools to help accounting and finance teams gain efficiencies and save time. With an average deployment timeline between 2-6 weeks, we help you avoid costly system implementations and get quick wins immediately. Our expertise in accounting and finance helps us understand your problems. We unlock your team's potential to focus on analysis and decision making, not preparation.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up">
