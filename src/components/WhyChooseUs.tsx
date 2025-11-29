@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
       icon: Clock,
       title: "Rapid Deployment",
       description:
-        "Most projects go live in 2–4 weeks, not months.",
+        "Most projects go live in 2–6 weeks, not months.",
     },
     {
       icon: Users,
