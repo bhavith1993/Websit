@@ -33,7 +33,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl animate-fade-in-up">
-            We transform finance processes to be efficient. We leverage light automation tools to help accounting and finance teams gain efficiencies and save time. With an average deployment timeline between 2-6 weeks, we help you avoid costly system implementations and get quick wins immediately. Our expertise in accounting and finance helps us understand your problems. We unlock your team's potential to focus on analysis and decision making, not preparation.
+            We modernize finance operations by converting manual, spreadsheet-heavy processes into fast, automated workflows. Using lightweight automation tools, we deliver meaningful efficiency gains in weeks—not months. No major system rollout. No disruption. Just immediate improvements in speed, visibility, and consistency. With deep accounting and FP&A experience, we understand finance challenges firsthand and build practical solutions that let your team spend less time preparing data and more time analyzing it
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up">
