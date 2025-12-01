@@ -26,9 +26,9 @@ const Hero = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in-up">
-            Finance Transformation{" "}
+            Finance automation built by finance experts—unlocking faster close cycles,{" "}
             <span className="bg-gradient-hero bg-clip-text text-transparent">
-              without the headcount
+              cleaner reporting, and more strategic capacity
             </span>
           </h1>
 
