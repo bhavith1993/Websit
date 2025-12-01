@@ -1,4 +1,5 @@
 import { Linkedin, Twitter, Mail } from "lucide-react";
+import rivanoeLogoImg from "@/assets/rivanoe-logo.jpg";
 
 const Footer = () => {
   return (
@@ -6,9 +7,12 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold mb-4 bg-gradient-hero bg-clip-text text-transparent">
-              Rivanoe Analytics
-            </h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img src={rivanoeLogoImg} alt="Rivanoe Analytics" className="h-12 w-auto" />
+              <h3 className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+                Rivanoe Analytics
+              </h3>
+            </div>
             <p className="text-background/80 text-sm">
               Expert Power BI and Alteryx consulting for finance professionals.
             </p>
