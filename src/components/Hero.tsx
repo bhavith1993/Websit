@@ -33,7 +33,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl animate-fade-in-up">
-            We modernize finance operations by converting manual, spreadsheet-heavy processes into fast, automated workflows. Using lightweight automation tools, we deliver meaningful efficiency gains in weeks—not months. No major system rollout. No disruption. Just immediate improvements in speed, visibility, and consistency. With deep accounting and FP&A experience, we understand finance challenges firsthand and build practical solutions that let your team spend less time preparing data and more time analyzing it
+            We modernize finance operations by converting manual, spreadsheet-heavy processes into fast, auditable workflows using light automation tools like Alteryx and Power BI. We deliver meaningful efficiency gains in weeks—not months. Avoid major system rollouts and disruption; we provide immediate improvements in reporting speed, data visibility, and consistency. Leveraging our deep accounting and FP&A experience, we understand finance challenges firsthand and build practical solutions. This enables your team to shift from data preparation to strategic analysis and decision-making
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up">
