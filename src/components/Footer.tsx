@@ -88,7 +88,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-background/20 pt-8 text-center text-sm text-background/60">
-          <p>© 2024 Rivanoe Analytics. All rights reserved.</p>
+          <p>© 2025 Rivanoe Analytics. All rights reserved.</p>
         </div>
       </div>
     </footer>
